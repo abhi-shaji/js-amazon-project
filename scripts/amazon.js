@@ -73,7 +73,8 @@ document.querySelectorAll('.js-add-to-cart')
 
     const quantitySelector = document.querySelector(`.js-quantity-selector-${productId}`);
 
-    quantity = Number(quantitySelector.value);
+    const quantity = Number(quantitySelector.value);
+    
 
     if (matchingItem) {
       matchingItem.quantity += quantity;
@@ -111,3 +112,4 @@ document.querySelectorAll('.js-add-to-cart')
   });
  });
 
+import { cart } from "../data/cart.js";
